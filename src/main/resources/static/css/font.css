@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: Microsoft Yahei;
+    text-align: center;
+}
+img{
+    height: 150px;
+}
+.chessboard{
+    width: 720px;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.chessboard .row{
+    overflow: hidden;
+}
+
+.chessboard .tile{
+    width: 47px;
+    height: 47px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+}
+
+.chessboard .tile.current{
+    background-color: #ddd;
+}
+
+.chessboard .chess-max,.chessboard .chess-min{
+    line-height: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.chess-min{
+    font-size: 65px;
+}
+.chess-max{
+    font-size: 75px;
+}
